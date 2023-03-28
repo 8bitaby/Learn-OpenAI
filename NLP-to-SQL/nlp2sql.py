@@ -45,7 +45,7 @@ nlp_text = prompt_input()
 
 
 response = openai.Completion.create(
-    model='code-davinci-002',
+    model='text-davinci-003',
     prompt=combine_prompts(df, nlp_text),
     temperature=0,
     max_tokens=150,
